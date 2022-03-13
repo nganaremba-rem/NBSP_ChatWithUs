@@ -11,7 +11,4 @@
 
 
     $con = mysqli_connect($host,$user,$pass,$db_name) or die('Error connecting to server');
-
-
-
 ?>
