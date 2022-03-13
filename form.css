@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+}
+
+.container {
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 2rem;
+}
+h1{
+  width: 100%;
+  background:  #046cb1;
+  z-index: 4;
+
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Caveat", cursive;
+  color: white;
+
+}
+.header-firstWord{
+  color: rgb(217, 255, 0);
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+}
+.card-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+.msg {
+  color: red;
+}
+.wave {
+  flex-shrink: 0;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+}
+.card {
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 9px 9px 22px #828282, -9px -9px 22px #ffffff;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+}
+
+.card-header {
+  font-size: x-large;
+  font-weight: bolder;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  width: 100%;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.card-body input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #828282;
+  outline-color: rgb(10, 224, 224);
+  font-size: large;
+}
+.card-body input[type="submit"] {
+  background: rgb(54, 170, 93);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.card-body input[type="submit"]:hover {
+  background: rgb(21, 150, 64);
+}
+.others {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  color: white;
+  background: rgb(19, 121, 204);
+  display: inline;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .card {
+    width: 40%;
+  }
+}

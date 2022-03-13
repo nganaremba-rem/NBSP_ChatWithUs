@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  background: #292929;
+  width: 100vw;
+  height: 100vh;
+}
+/* intro start */
+.intro{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    background: #000;
+    color: white;
+    z-index: 3;
+}
+h1{
+    overflow: hidden;
+}
+.introtext{
+    display: inline-block;
+    transform: translateY(100%);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+/* intro end */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  background: #046cb1;
+  color: white;
+  flex-shrink: 0;
+}
+.user-title {
+  font-size: x-large;
+}
+.logout {
+  background-color: rgb(240, 62, 86);
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.logout:hover {
+  background-color: rgb(194, 31, 53);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.search-area {
+  display: flex;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  width: max-content;
+  background: #dbdbdb;
+  overflow: hidden;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  flex-shrink: 0;
+}
+.search-icon {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+}
+.search-area input {
+  border: none;
+  height: 100%;
+  outline: none;
+  background: inherit;
+  font-size: large;
+}
+
+.main-chat-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 10rem;
+}
+.chat-item-wrap {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.5rem .7rem;
+  border-radius: 3px;
+  background: #292929;
+  /* border-bottom: 1px solid #6d6b6b; */
+  cursor: pointer;
+  user-select: none;
+}
+.prof-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.prof-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.chat-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem .5rem;
+}
+.chatname {
+  font-size: x-large;
+}
+.last-chat {
+  font-size: small;
+}
+
+@media screen and (max-width: 600px){
+    .intro{
+        font-size: 1.5rem;
+    }
+}
